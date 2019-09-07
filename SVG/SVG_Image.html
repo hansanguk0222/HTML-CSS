@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta char="utf-8">
+    <title>SVG이미지태그</title>
+    <script src="modernizr-custom.js"></script>
+</head>
+
+<body>
+    <h1>SVG이미지</h1>
+    <p>
+        <!--SVG이미지를 넣어보자-->
+        <img src="200px-Google_2015_logo.svg.webp" alt="구글">
+        <script>
+            if (!Modernizer.svg) {
+                $("img").attr("src", "200px-Google_2015_logo.png");
+            }
+        </script>
+    </p>
+</body>
+
+</html>

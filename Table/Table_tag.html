@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta char="utf-8">
+    <title>표 태그</title>
+</head>
+
+<body>
+    <p>
+        <!--표 만들기 태그-->
+        <table border="1">
+            <tr>
+                <td>1행 1열</td>
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+                <td>1행 4열</td>
+                <td>1행 5열</td>
+                <td>1행 6열</td>
+            </tr>
+            <tr>
+                <td>2행 1열</td>
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+                <td>2행 4열</td>
+                <td>2행 5열</td>
+                <td>2행 6열</td>
+            </tr>
+        </table>
+    </p>
+
+    <p>
+        <!--셀 제목 만들기 태그-->
+        <table border="1">
+            <tr>
+                <th>제목 셀</th>
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+                <td>1행 4열</td>
+                <td>1행 5열</td>
+                <td>1행 6열</td>
+            </tr>
+            <tr>
+                <th>제목 셀</th>
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+                <td>2행 4열</td>
+                <td>2행 5열</td>
+                <td>2행 6열</td>
+            </tr>
+        </table>
+    </p>
+
+    <p>
+        <!--colspan을 이용한 셀을 합치기-->
+        <table border="2">
+            <tr>
+                <th>이름</th>
+                <td>홍길동</td>
+                <th>나이</th>
+                <td>17</td>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td>남자</td>
+                <th>관심사</th>
+                <td>도둑질</td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td colspan="3">서울특별시 어느곳</td>
+            </tr>
+            <tr>
+                <th>세부<br>사항</th>
+                <td colspan="3">착함</td>
+            </tr>
+        </table>
+    </p>
+
+    <p>
+        <!--rowspan을 이용한 셀을 합치기-->
+        <table border="1">
+            <tr>
+                <th>빨간색 옷 명단</th>
+                <th>파란색 옷 명단</th>
+                <th>노란색 옷 명단</th>
+                <th>총 인원 수</th>
+            </tr>
+            <tr>
+                <td rowspan="2">김동팔</td>
+                <td rowspan="2">김민굴<br>개복치</td>
+                <td rowspan="2">마이콜</td>
+                <td rowspan="3">4명</td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>1명</td>
+                <td>2명</td>
+                <td>1명</td>
+            </tr>
+        </table>
+    </p>
+
+    <p>
+        <!--표에 제목 붙이기-->
+        <table border="1">
+            <caption>
+                <h3>이것은 표이다.</h3>
+                <p>항상 무엇을 예로 들지 고민중인 나</p>
+            </caption>
+            <tr>
+                <th>20살</th>
+                <td>대학을 다닌다. 연애를 하고싶다.</td>
+            </tr>
+            <tr>
+                <th>30살</th>
+                <td>직장을 다닌다. 연애를 하고싶다.</td>
+            </tr>
+            <tr>
+                <th>40살</th>
+                <td>놀러 다닌다. 연애를 못하게 되었다.</td>
+            </tr>
+        </table>
+    </p>
+
+    <p>
+        <!--표에 제목 붙이기1-->
+        <table border="1">
+            <caption>
+                <h3>이것은 표이다.</h3>
+                <p>항상 무엇을 예로 들지 고민중인 나</p>
+            </caption>
+            <tr>
+                <th>20살</th>
+                <td>대학을 다닌다. 연애를 하고싶다.</td>
+            </tr>
+            <tr>
+                <th>30살</th>
+                <td>직장을 다닌다. 연애를 하고싶다.</td>
+            </tr>
+            <tr>
+                <th>40살</th>
+                <td>놀러 다닌다. 연애를 못하게 되었다.</td>
+            </tr>
+        </table>
+        <br>
+    </p>
+
+    <p>
+        <!--표에 제목 붙이기2-->
+        <figure>
+            <figcaption>
+                <p>내가 좋아하는 야구선수 명단</p>
+            </figcaption>
+            <table border="1">
+                <tr>
+                    <th>3루수</th>
+                    <td>최정, 허경민, 박석민, 김동주, 이원석</td>
+                </tr>
+                <tr>
+                    <th>2루수</th>
+                    <td>오재원, 최주환, 고영민, 정근우</td>
+                </tr>
+                <tr>
+                    <th>1루수</th>
+                    <td>오재일, 박병호, 채태인, 러프</td>
+                </tr>
+                <tr>
+                    <th>투수</th>
+                    <td>니퍼트, 리오스, 박명환, 린드블럼, 이영하, 함덕주, 정재훈</td>
+                </tr>
+            </table>
+        </figure>
+    </p>
+
+    <p>
+        <!--표 구조 정의하기-->
+        <table border="1">
+            <caption>간식 신청 명단</caption>
+            <!--표의 제목 부분-->
+            <thead>
+                <tr>
+                    <th>간식</th>
+                    <th>명단</th>
+                    <th>나이</th>
+                    <th>신장</th>
+                </tr>
+            </thead>
+            <!--표의 본문 부분-->
+            <tbody>
+                <tr>
+                    <td>떡볶이</td>
+                    <td>김상식</td>
+                    <td>19</td>
+                    <td>176</td>
+                </tr>
+                <tr>
+                    <td>과자</td>
+                    <td>곽이잉</td>
+                    <td>5</td>
+                    <td>105</td>
+                </tr>
+                <tr>
+                    <td>햄버거</td>
+                    <td>과로사</td>
+                    <td>26</td>
+                    <td>170</td>
+                </tr>
+            </tbody>
+            <!--표의 요약 부분-->
+            <tfoot>
+                <tr>
+                    <td colspan="4">주문완료, 내일 저녁 8시반까지 배달 완료해야함</td>
+                </tr>
+            </tfoot>
+        </table>
+    </p>
+
+    <p>
+        <table border="1">
+            <!--하나의 열에 공통된 스타일을 지정하기-->
+            <caption>colgroup 연습하기</caption>
+            <colgroup>
+                <col>
+                <col span="2" style="background-color: skyblue">
+                <col style="background-color: chocolate">
+            </colgroup>
+            <tr>
+                <td>1행 1열</td>
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+                <td>1행 4열</td>
+            </tr>
+            <tr>
+                <td>2행 1열</td>
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+                <td>2행 4열</td>
+            </tr>
+        </table>
+
+    </p>
+</body>
+
+</html>

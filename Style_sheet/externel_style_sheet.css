@@ -1,0 +1,15 @@
+/*
+제목과
+목록을
+꾸밉니다.
+*/
+h1 {
+    font-size: 30px; /*글자 크기*/
+    color:goldenrod; /*글자 색*/
+}
+
+ul {
+    font-size: 15px; /*글자 크기*/
+    color:yellowgreen; /*글자 색*/
+    list-style-type: square; /*불릿의 모양*/
+}
